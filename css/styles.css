@@ -1,6 +1,11 @@
-body{
-    background-image: url(/images/flag-waving-250.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 150vh;
+
+#jumbotron img{
+     display: flex;
+     justify-content: center;}
+     
+.kids{
+
+   margin-left: 20%;
+   height: 400px;
+   width:600px;
 }
