@@ -1,8 +1,9 @@
-body{
-   background-image: url(/images/flag-waving-250.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background: linear-gradient(rgb(0, 0, 7));
+/* body{ */
+   /* background-image: url(/images/flag-waving-250.png); */
+   /* background-repeat: no-repeat; */
+   /* background-size: cover; */
+   /* opacity: 0.7; */
+   /* background: linear-gradient(rgb(0, 0, 0)); */
     /* height: 150vh; */
 
 }
