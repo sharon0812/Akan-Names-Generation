@@ -1,4 +1,11 @@
+body{
+   background-image: url(/images/flag-waving-250.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background: linear-gradient(rgb(0, 0, 7));
+    /* height: 150vh; */
 
+}
 #jumbotron img{
      display: flex;
      justify-content: center;}
