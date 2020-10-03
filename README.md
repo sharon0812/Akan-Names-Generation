@@ -10,7 +10,9 @@ Html
 Css
 
 ## Contact
-You can reach me via email anyangosharon26@gmail.com
+You can reach me via email: 
+anyangosharon26@gmail.com
 
 ## Live link
+
 ## Lincense
