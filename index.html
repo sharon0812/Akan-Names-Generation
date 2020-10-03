@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akan Names Generation</title>
-    <link rel="stylesheet" href="js/scripts.js">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="jumbotron">
             <h2><strong>Akan Names</strong></h2>
             <img src="/images/65NJ6A0169.jpg" class="kids"> 
-            <p>The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born. <br>These "day names" have further meanings concerning the soul and character of the person. <br>Middle names have
+            <p class="txt">The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born. <br>These "day names" have further meanings concerning the soul and character of the person. <br>Middle names have
                 considerably more variety and can refer to their birth order, twin status, or an ancestor's middle name.</p>
             </div>
 
@@ -22,51 +22,35 @@
             <!-- <h1 class=" m-0 text-capitalize text-center" id="result"></h1> -->
           </div>
     
-    <form>
-      <div class="form-group row">
-        <label for="date" class="col-sm-2 col-form-label">Date</label>
-        <div class="col-sm-10">
-          <input type="number" class="form-control" id="date" placeholder="DD">
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="month" class="col-sm-2 col-form-label">Month</label>
-        <div class="col-sm-10">
-          <input type="number" class="form-control" id="month" placeholder="MM">
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="year" class="col-sm-2 col-form-label">Year</label>
-        <div class="col-sm-10">
-          <input type="number" class="form-control" id="year" placeholder="YY">
-        </div>
-      </div>
-      <fieldset class="form-group">
-        <div class="row">
-          <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
-          <div class="col-sm-10" id="">
-            <div id="gender">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="male" value="option1" checked>
-              <label class="form-check-label" for="gridRadios1">
-                Male
-              </label>
+          <form name="myForm" class="form" onsubmit="validate();">
+            <div class="form-group">
+              <label for="number">Year of Birth:</label>
+              <input type="number" class="form-control" id="year" placeholder="Year of Birth Eg: 2019 if born in 2019" name="year">
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="female" value="option2">
-              <label class="form-check-label" for="gridRadios2">
-                Female
-              </label>
+            <div class="form-group">
+              <label for="month">Month of Birth:</label>
+              <input type="number" class="form-control" id="month" placeholder="Month of Birth" name="month">
             </div>
-          </div>
-      <div class="form-group row">
-        <div class="col-sm-10">
-          <button type="submit" class="btn btn-danger" onclick="myFunction()">Submit</button>
-          <button type="reset" class="btn btn-danger">Reset</button>
-        </div>
-      </div>
-    </div>
-    </form>
+            <div class="form-group">
+              <label for="date">Date of Birth:</label>
+              <input type="number" class="form-control" id="date" placeholder="Date of Birth eg 05 for May" name="date">
+            </div>
+            <div class="form-group">
+              <label for="month">Gender</label><br>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="gender" id="male">&nbsp; Male 
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="gender" id="female">&nbsp; Female 
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="findName();">My Akan</button>
+            <br>
+          </form>
 
         <h2><strong>Get to know Ghanian day names</strong></h2>
           <table class="table">
@@ -77,7 +61,7 @@
                 <th scope="col">Female name</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody id="slide">
               <tr>
                 <td>Sunday</td>
                 <td>Kwasi</td>
@@ -113,10 +97,10 @@
                 <td>Kwame</td>
                 <td>Ama</td>
               </tr>
-              <script src="js/scripts.js"></script>
             </tbody>
           </table>
          
-  </div>    
+  </div>   
+  <script src="js/scripts.js"></script> 
 </body>
 </html>
